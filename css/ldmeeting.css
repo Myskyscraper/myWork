@@ -1,0 +1,288 @@
+
+/*全局样式*/
+*{padding:0;margin:0;}
+div,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,img,ol,ul,li,table,th,td,p,span,a{border:0;}
+img,input{border:none;}
+body{font-family:Microsoft YaHei;font-size:12px;background:#180f33;color:#fff;}
+html{overflow-y:scroll;}
+ul,ol{list-style-type:none;}
+th,td,input{font-size:12px;}
+h3{font-size:14px;}
+h4{font-size:18px;}
+button{border:none;cursor:pointer;font-size:12px;background-color:transparent;}
+select{border-width:1px;_zoom:1;border-style:solid;padding-top:2px;font-size:12px;}
+.clear{clear:both;font-size:1px;height:0;visibility:hidden;line-height:0;}
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+a:link,a:visited{text-decoration:none;color:#fff;}
+a:hover,a:active{
+	text-decoration:none!important;
+	color:#fff;
+}
+
+
+/*---------------------------------------------------------------*/
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+.tall:after{content: "";display: block;height:0;clear: both;overflow:hidden;visibility: hidden;}
+
+/*公有的样式的*/
+.exh,.about,.guest,.report,.scene,.banner
+{
+	width: 1100px;
+	margin: 0 auto;
+}
+.fb{
+	color: #c1acff;
+}
+
+.fr{
+	color: #c000d7;
+}
+
+.fbl{
+	color: #6badff;
+}
+
+.f16{
+	font-size:16px; 
+}
+
+.f14{
+	font-size:14px; 
+}
+
+.f24{
+	font-size: 24px;
+}
+/*---------------------------------------------------------------*/
+
+.banner-bg{
+	height: 970px;
+	background: url(../img/banner_bg1.png) no-repeat center ;
+}
+
+.banner-2{
+	width: 770px;
+	height: 770px;
+	margin: 0 auto;
+	background: url(../img/star2.png) no-repeat center -50px;
+}
+
+.banner-1{
+	position: relative;
+	width: 441px;
+	height: 770px;
+	margin: 0 auto;
+	background: url(../img/star1.png) no-repeat center 125px;
+}
+
+.banner-logo{
+	position: absolute;
+	top: 93px;
+    left: -330px;
+	width: 1100px;
+	height: 424px;
+	background: url(../img/btext.png) no-repeat center;
+}
+
+.banner-text{
+	position: absolute;
+    top: 545px;
+    left: -262px;
+    width: 1011px;
+    line-height: 26px;
+}
+
+.ld-tit{
+	width: 1100px;
+    margin: 0 auto;
+	height: 136px;
+	padding-top: 70px;
+	background: url(../img/tit.png) no-repeat 330px center ;
+}
+
+.ld-tit img{
+	display: block;
+	margin: 0 auto;
+}
+.exh{
+	height: 720px;
+}
+
+.exh-l{
+	width: 460px;
+	height: 360px;
+}
+
+.exh-l p{
+	font-size: 14px;
+	padding-right: 70px;
+	line-height: 25px;
+}
+
+.ex-r{
+	width: 640px;
+	height: 360px;
+	background:orange;
+}
+
+.exhcon-bottom{
+	height: 180px;
+	padding-top: 40px;
+	background: url(../img/kuan.png) no-repeat center;
+}
+
+.exhcon-bottom p{
+	width: 960px;
+	padding: 35px;
+	font-size: 16px;
+	color: #c1acff;
+	margin: 0 auto;
+	background-color: #231746;
+}
+
+.scene-bg{
+	width: 100%;
+	height: 912px;
+}
+
+.scene-con{
+	height: 706px;
+}
+
+.about{
+	height: 700px;
+}
+
+.about-con{
+	text-align: center;
+}
+
+.about-con li:nth-child(2){
+	margin-top: 15px;
+}
+
+.about-con li:nth-child(3){
+	margin-top: 30px;
+}
+
+.about-con li:nth-child(4){
+	margin: 15px 0 20px;
+}
+
+.about-con li:nth-child(5){
+	line-height: 28px;
+}
+
+
+.about-con li:nth-child(6){
+	margin: 15px 0 20px;
+}
+
+.guest{
+
+}
+
+.guest-intr{
+	color: #f5f4ff;
+	padding: 0 200px 20px;
+	line-height: 27px;
+}
+
+.guest-con {
+	padding: 43px 0 150px;
+}
+
+.guest-con li{
+	float: left;
+	width: 253px;
+	height: 400px;
+	background-color: orange;
+	margin-right: 29px;
+}
+
+.guest-con li:nth-child(4){
+	margin-right: 0px;
+}
+
+.report{
+	height: 870px;
+}
+
+.report-con li{
+	float: left;
+	width: 530px;
+	height: 160px;
+	margin-bottom: 20px;
+}
+
+.report-con li:nth-child(2){
+	float: right;
+}
+
+.report-con li:nth-child(4){
+	float: right;
+}
+
+.report-con li:nth-child(6){
+	float: right;
+}
+.report-img{
+	width: 290px;
+	height: 160px;
+	border: 1px solid #c000d7;
+	padding: 2px;
+}
+
+.report-img img{
+	width: 100%;
+	height: 100%;
+}
+
+.report-text{
+	width: 180px;
+	padding: 0 20px;
+	height: 160px;
+}
+
+.report-text p{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.report-text a{
+
+	color:#c000d7;
+}
+
+/*-------------------------------------------媒体查询的样式的--------------------*/
+@media screen and (min-width: 400px) and (max-width: 600px)  {
+	
+	body{
+		width: 1200px;
+	}
+	.rice-banner-bg,.ricePriza-bg,.riceShip-bg,.rice-rulers-bg,.mode{width: 1200px;}
+
+	
+}
+@media screen and (min-width: 600px) and (max-width: 750px)  {
+	
+	body{
+		width: 1200px;
+	}
+	.rice-banner-bg,.ricePriza-bg,.riceShip-bg,.rice-rulers-bg,.mode{width: 1200px;}
+	
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px)  {
+	body{
+		width: 1200px@import;
+	}
+	.rice-banner-bg,.ricePriza-bg,.riceShip-bg,.rice-rulers-bg,.mode{width: 1200px;}
+}
