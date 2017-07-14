@@ -5,23 +5,34 @@
 		<meta charset="utf-8">
 		<title>朗迪会议</title>
 		<link rel="stylesheet" href="css/ldmeeting.css"/>
+
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+	    <script type="text/javascript" src="js/jquery.immersive-slider.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	    <link rel="stylesheet" type="text/css" href="css/immersive-slider.css" />
 	</head>
 
 	<body>
 		<!-- banner -->
 			<div class="banner-bg">
-				<div class="banner-2">
-					<div class="banner-1">
-						<div class="banner-logo"></div>
-						<p class="banner-text">
-							立足世界最大的金融科技市场，朗迪金融科技峰会已成为 2017 年度不容错过的中国最大规模金融科技行业盛会。<br>
-							第二届朗迪中国峰会7月15日、16日于上海浦东嘉里大酒店盛大召开，超过2000名全球金融科技行业决策者参与，
-							六大主题120多个环节涵盖金融科技领域热议话题，其中包括后监管时代行业发展、保险科技、区块链、银行合作项目、
-							普惠金融及财富管理等。
-							为期两天的峰会展示了最前沿、最具价值的行业动态，加剧行业深度交流与合作洽谈。
-						</p>
+
+				<div class="banner-box">
+					
+				
+					<div class="banner-2">
+						<div class="banner-1">
+							<div class="banner-logo"></div>
+							<p class="banner-text">
+								立足世界最大的金融科技市场，朗迪金融科技峰会已成为 2017 年度不容错过的中国最大规模金融科技行业盛会。<br>
+								第二届朗迪中国峰会7月15日、16日于上海浦东嘉里大酒店盛大召开，超过2000名全球金融科技行业决策者参与，
+								六大主题120多个环节涵盖金融科技领域热议话题，其中包括后监管时代行业发展、保险科技、区块链、银行合作项目、
+								普惠金融及财富管理等。
+								为期两天的峰会展示了最前沿、最具价值的行业动态，加剧行业深度交流与合作洽谈。
+							</p>
+						</div>
 					</div>
+
 				</div>
 
 				<div class="ld-tit">
@@ -45,7 +56,28 @@
 
 
 						<div class="ex-r right">
+							<div class="ex-box">
+								<ul class="exh-con">
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+							</div>
 
+							<div class="exh-bot">
+								<p class="exh-swi-text left">
+									杨浦区国定东路233号绿地能源大厦人头攒动，沪商财富正式成立五角场营业部，这也是第五家营业部。
+								</p>
+								<ol class="exh-cotron right" >
+									<li class="exh-active"></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ol>
+							</div>
 						</div>
 
 					</div>
@@ -72,7 +104,9 @@
 				</div>
 
 				<div class="scene-con">
+					<!--  -->
 					
+					<!--  -->
 				</div>
 			</div>
 
@@ -203,6 +237,33 @@
 		</div>
 
 	</body>
+	<script type="text/javascript">
+	// 峰会现场
+		$(".exh-cotron li").click(function(){
+				var index= $(this).index();
+				$(this).addClass('exh-active').siblings().removeClass('exh-active');
+				$(".exh-con").animate({"left":-638*index});
+
+				switch(index){
+					case 0:
+					$(".exh-swi-text").text('1');
+					break;
+					case 1:
+					$(".exh-swi-text").text('2');
+					break;
+					case 2:
+					$(".exh-swi-text").text('3');
+					break;
+					case 3:
+					$(".exh-swi-text").text('4');
+					break;
+					case 4:
+					$(".exh-swi-text").text('5');
+					break;
+				}
+		})
+
+	</script>
 
 
 </html>
