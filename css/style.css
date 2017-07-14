@@ -47,8 +47,9 @@ h1 span {
 }
 
 .page_container {
-  max-width: 960px;
-  margin: 150px auto;
+
+  width: 1100px;
+  margin: 0px auto;
 }
 
 .header {

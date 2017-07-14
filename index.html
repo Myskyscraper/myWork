@@ -107,7 +107,68 @@
 
 				<div class="scene-con">
 					<!--  -->
-					
+
+						<div class="page_container">
+							<div id="immersive_slider">
+
+								<div class="slide" data-blurred="img/slide1_blurred.jpg">
+									<div class="content">
+										<h2>Immersive Slider</h2>
+										<p>It’s never been easier to watch Immersive Slider on the big screen
+											Send your favorite Immersive Slider videos from your Android phone or tablet to TV with the touch of a button. It’s easy. No wires, no setup, no nothing. Find out more here.</p>
+										</div>
+
+										<div class="image">
+											<img src="img/slide1.jpg" alt="Slider 1">
+										</div>
+
+									</div>
+
+
+									<div class="slide" data-blurred="img/slide2_blurred.jpg">
+										<div class="content">
+											<h2>Immersive Slider</h2>
+											<p>It’s never been easier to watch Immersive Slider on the big screen
+												Send your favorite Immersive Slider videos from your Android phone or tablet to TV with the touch of a button. It’s easy. No wires, no setup, no nothing. Find out more here.</p>
+											</div>
+											<div class="image">
+												<img src="img/slide2.jpg" alt="Slider 1">
+											</div>
+										</div>
+										<div class="slide" data-blurred="img/slide1_blurred.jpg">
+											<div class="content">
+												<h2>Immersive Slider</h2>
+												<p>It’s never been easier to watch Immersive Slider on the big screen
+													Send your favorite Immersive Slider videos from your Android phone or tablet to TV with the touch of a button. It’s easy. No wires, no setup, no nothing. Find out more here.</p>
+												</div>
+
+												<div class="image">
+													<img src="img/slide1.jpg" alt="Slider 1">
+												</div>
+
+											</div>
+
+											<div class="slide" data-blurred="img/slide3_blurred.jpg">
+												<div class="content">
+													<h2>Immersive Slider</h2>
+													<p>It’s never been easier to watch Immersive Slider on the big screen
+														Send your favorite Immersive Slider videos from your Android phone or tablet to TV with the touch of a button. It’s easy. No wires, no setup, no nothing. Find out more here.</p>
+													</div>
+													<div class="image">
+														<img src="img/slide3.jpg" alt="Slider 1">
+													</div>
+												</div>
+
+
+												<div class="is-nav">
+													<a  class="is-prev">&laquo;</a>
+													<a  class="is-next">&raquo;</a>
+												</div>
+											</div>
+										</div>
+									
+
+
 					<!--  -->
 				</div>
 			</div>
@@ -314,7 +375,16 @@
 					$(".exh-swi-text").text('5');
 					break;
 				}
-		})
+		});
+
+
+		$(document).ready( function() {
+	    $("#immersive_slider").immersive_slider({
+	      container: ".main",
+	      animation: "bounce",
+	      autoStart: false
+	    });
+	  });
 
 	</script>
 
