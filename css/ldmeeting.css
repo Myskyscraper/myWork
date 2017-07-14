@@ -297,6 +297,11 @@ a:hover,a:active{
 	cursor: pointer;
 }
 
+.limit-box{
+	width: 100%;
+	height: 100%;
+}
+
 .guest-con li:nth-child(4){
 	margin-right: 0px;
 }
@@ -305,13 +310,30 @@ a:hover,a:active{
 	position: absolute;
 	left: 48px;
 	top: 30px;
-	width: 160px;
-	height: 160px;
+	width: 152px;
+	height: 152px;
+	transition: width 1s, height 1s, top 1s, left 1s, border 1s;
+	z-index: 2;
+	border: 1px solid #c000d7;
+	border-radius: 50%;
+	padding: 4px;
 }
+
+.guest-con li:hover .p-photo{
+	width: 100px;
+	height: 100px;
+	top: -40px;
+	left: 70px;
+	border:none;
+}
+
+
+
+
 .p-name{
 	position: absolute;
 	height: 38px;
-	top: 218px;
+	top: 245px;
 	width: 100%;
 	text-align: center;
 	font-size: 18px;
@@ -321,7 +343,25 @@ a:hover,a:active{
 	position:absolute;
 	width: 100%;
 	text-align: center; 
-	bottom: 90px;
+	bottom: 70px;
+}
+
+.p-speical{
+	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 213px;
+	height: 300px;
+	background: #30ace0;
+	opacity: 0;
+	transition: opacity 1s;
+	padding: 100px 20px 0;
+	line-height: 20px;
+	color: #063a54;
+}
+
+.guest-con li:hover .p-speical{
+	opacity: 1;
 }
 
 .report{
@@ -423,6 +463,22 @@ a:hover,a:active{
   }
 }
 
+
+@keyframes changesmall
+{
+0%{
+	left: 48px;
+	top: 30px;
+	width: 160px;
+	height: 160px;
+	}
+	100%{
+		width: 100px;
+		height: 100px;
+		top: -40px;
+		left: 80px;
+	}
+}
 
 /*-------------------------------------------媒体查询的样式的--------------------*/
 @media screen and (min-width: 400px) and (max-width: 600px)  {
